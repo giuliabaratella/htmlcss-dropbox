@@ -32,6 +32,9 @@ body {
     padding: 0 5px;
 }
 
+.debug {
+    border: 1px solid var(--color-bg-footer);
+}
 
 ul {
     list-style: none;
@@ -151,6 +154,9 @@ nav a {
 /* main  */
 main {
     padding-top: 200px;
+}
+.section-divider {
+    margin-bottom: 100px;
 }
 
 /* footer  */
