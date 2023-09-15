@@ -32,9 +32,9 @@ body {
     padding: 0 5px;
 }
 
-.debug {
+/* .debug {
     border: 1px solid var(--color-bg-footer);
-}
+} */
 
 ul {
     list-style: none;
@@ -67,6 +67,9 @@ a {
 .just-flex-end {
     justify-content: flex-end;
 }
+.just-center {
+    justify-content: center;
+}
 .align-center {
     align-items: center;
     align-content: center;
@@ -77,6 +80,12 @@ a {
 }
 .wrap {
     flex-flow: row wrap;
+}
+.row-gap {
+    row-gap: 20px;
+}
+.nav-column-gap {
+    column-gap: 35px;
 }
 
 /* header */
@@ -94,9 +103,6 @@ nav {
     z-index: 1000;
 }
 
-.nav-column-gap {
-    column-gap: 35px;
-}
 
 nav a {
     color: var(--color-bg-footer);
@@ -152,12 +158,41 @@ nav a {
 }
 
 /* main  */
+
+
 main {
-    padding-top: 200px;
+    padding-top: 150px;
 }
 .section-divider {
     margin-bottom: 100px;
 }
+main h2 {
+    font-size: 2.5em;
+    padding-bottom: 50px;
+}
+main h3 {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+
+/* dropbox business section  */
+
+.card {
+    width: 30%;
+}
+.card img {
+    width: 100%;
+}
+
+.dropbox-business a{
+    color: var(--color-button);
+    text-decoration: underline;
+}
+.dropbox-business .second-h2 {
+    padding-top: 200px;
+}
+
 
 /* footer  */
 footer {
