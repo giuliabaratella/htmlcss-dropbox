@@ -175,6 +175,29 @@ main h3 {
     margin-bottom: 30px;
 }
 
+/* dropbox partner section  */
+.dropbox-partner img {
+    width: 60%;
+}
+.dropbox-partner-text {
+    padding: 0 20px;
+}
+
+.dropbox-partner h3 {
+    padding-top: 50px;
+}
+
+.dropbox-partner p {
+    margin-bottom: 30px;
+}
+
+.dropbox-partner a {
+    color: var(--color-bg-footer);
+    border: 2px solid var(--color-bg-footer);
+    padding: 10px 15px;
+    display: block;
+    width: fit-content;
+}
 
 /* dropbox business section  */
 
