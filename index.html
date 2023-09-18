@@ -63,9 +63,194 @@
 
     <main>
 
-        <!-- piani  -->
+        <!-- billing section  -->
         <section id="piani" class="container debug section-divider">
-            <h2>Trova il piano business che fa per te</h2>
+            <h2 class="divider-50">Trova il piano business che fa per te</h2>
+            <div class="billing-choice d-flex just-flex-start divider-30 column-gap">
+                <div>
+                    <input type="radio" name="fatturazione" id="mensile">
+                    <label for="mensile">Fatturazione mensile</label>
+                </div>
+                <div>
+                    <input type="radio" name="fatturazione" id="annuale">
+                    <label for="annuale">Fatturazione annuale</label>
+                </div>
+            </div>
+            <div class="billing-options d-flex just-space-between align-stretch divider-50">
+                <!-- professional  -->
+                <article class="billing-plan">
+                    <div class="billing-plan-header">
+                        <i class="fa-solid fa-user"></i>
+                        Singolo
+                    </div>
+                    <div class="billing-plan-body">
+                        <h3 class="plan-name divider-30">Professional</h3>
+                        <h4 class="plan-price divider-10">€ 12.00</h4>
+                        <div class="sub-price divider-30">/mese</div>
+                        <ul class="divider-30">
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-user"></i></div>
+                                <div>1 utente</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-folder"></i></div>
+                                <div>5 Tb di spazio di archiviazione sicuro</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-share-nodes"></i></div>
+                                <div>Funzioni di produttività premium e condivisione file semplice e sicura</div>
+                            </li>
+                        </ul>
+                        <a class="blue-button divider-30" href="#">Prova gratis per 30 giorni</a>
+                        <div class="divider-50">
+                            oppure 
+                            <a class="simple-anchor" href="#">acquista ora</a>
+                        </div>
+                        <div class="hr-small divider-50"></div>
+                        <h4 class="divider-20">Punti Salienti del piano</h4>
+                        <ul class="billing-plan-details">
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <div> Invia file fino a 100 GB con Dropbox Transfert</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <div>Cartelle offline su dispositivi mobili</div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </article>
+                <!-- advanced  -->
+                <article class="billing-plan">
+                    <div class="billing-plan-header">
+                        <i class="fa-solid fa-users"></i>
+                        Team
+                    </div>
+                    <div class="billing-plan-body">
+                        <h3 class="plan-name divider-30">Advanced</h3>
+                        <h4 class="plan-price divider-10">€ 18.00</h4>
+                        <div class="sub-price divider-30">/utente/mese</div>
+                        <ul class="divider-30">
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-users"></i></div>
+                                <div>3 o più utenti</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-folder"></i></div>
+                                <div>Tutto lo spazio di cui ha bisogno il tuo team</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-share-nodes"></i></div>
+                                <div>Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del tuo team</div>
+                            </li>
+                        </ul>
+                        <a class="blue-button divider-30" href="#">Prova gratis per 30 giorni</a>
+                        <div class="divider-50">
+                            oppure 
+                            <a class="simple-anchor" href="#">acquista ora</a>
+                        </div>
+                        <div class="hr-small divider-50"></div>
+                        <h4 class="divider-20">Punti Salienti del piano</h4>
+                        <ul class="billing-plan-details">
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <div>Nessun limite di spazio per i file</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <div>Cartelle offline su dispositivi mobili</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <div>
+                                    Risparmio del 50% rispetto alle iscrizioni singole
+                                </div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <div>Possibilità di inserire nuovi membri del team</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <div>Gestione dei permessi in base ai ruoli</div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </article>
+                <!-- enterprise  -->
+                <article class="billing-plan">
+                    <div class="billing-plan-header">
+                        <i class="fa-solid fa-building"></i>
+                        Azienda
+                    </div>
+                    <div class="billing-plan-body">
+                        <h3 class="plan-name divider-30">Enterprise</h3>
+                        <h4 class="plan-price divider-10">Contattaci</h4>
+                        <div class="sub-price divider-30">-</div>
+                        <ul class="divider-30">
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-user"></i></div>
+                                <div>10 o più utenti</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-folder"></i></div>
+                                <div>Soluzioni personalizzabili per la tua azienda</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-share-nodes"></i></div>
+                                <div>Assistenza personalizzata per aiutare gli amministratori in una gestione su larga scala</div>
+                            </li>
+                        </ul>
+                        <a class="blue-button divider-30" href="#">Contattaci</a>
+                        <div class="divider-50">
+                            oppure 
+                            <a class="simple-anchor" href="#">acquista ora</a>
+                        </div>
+                        <div class="hr-small divider-50"></div>
+                        <h4 class="divider-20">Punti Salienti del piano</h4>
+                        <ul class="billing-plan-details">
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <div>Cartelle offline su dispositivi mobili</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <div>Servizio assistenza 24/h</div>
+                            </li>
+                            <li class="d-flex just-flex-start column-gap-small divider-20">
+                                <div><i class="fa-solid fa-check"></i></div>
+                                <div>Possibilità di personalizzazione totale</div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </article>
+            </div>
+
+            <!-- enterprise-big-box  -->
+            <article class="billing-plan-big-box">
+                <div class="billing-plan-header">
+                    <i class="fa-solid fa-building"></i>
+                    team
+                </div>
+                <div class="billing-plan-body">
+                    <div class="d-flex just-space-between align-baseline">
+                        <div>
+                            <h3 class="plan-name divider-10">Enterprise</h3>
+                            <h4 class="plan-price divider-50">Contatta l'ufficio vendite per i prezzi</h4>
+                            <div>
+                                Soluzioni personalizzate e supporto su misura per aiutare i professionisti IT nella gestione su qualsiasi scala.
+                            </div>
+                        </div>
+                        <a class="blue-button" href="#">
+                            Contatta l'ufficio vendite
+                        </a>
+                    </div>
+                </div>
+            </article>
+
         </section>
 
         <!-- dropbox partner  -->
@@ -134,13 +319,14 @@
             <h2 class="second-h2 divider-50">
                 Più di 500.000 team utilizzano <br> Dropbox Business
             </h2>
-            <a href="#">Scopri di più sui nostri clienti</a>
+            <a class="simple-anchor" href="#">Scopri di più sui nostri clienti</a>
 
         </section>
 
+
         <!-- brand  -->
-        <!-- sezione sinistra  -->
         <section class="debug d-flex">
+            <!-- sezione sinistra  -->
             <div class="brand-wrapper d-flex wrap">
 
                 <div class="brand-box d-flex align-center just-center" id="designit">

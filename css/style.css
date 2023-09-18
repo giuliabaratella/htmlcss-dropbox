@@ -38,17 +38,6 @@ body {
     border: 1px solid var(--color-bg-footer);
 } */
 
-.divider-30 {
-    margin-bottom: 30px;
-}
-
-.divider-50 {
-    margin-bottom:50px;
-}
-
-.section-divider {
-    margin-bottom: 100px;
-}
 
 ul {
     list-style: none;
@@ -57,6 +46,7 @@ ul {
 a {
     text-decoration: none;
     color: var(--color-bg-main);
+    display: block;
 }
 
 .blue-button {
@@ -72,8 +62,40 @@ a {
     color: var(--color-text);
 }
 
+.simple-anchor {
+    color: var(--color-button);
+    text-decoration: underline;
+}
+
+.simple-anchor:hover{
+    color: var(--color-box-6);
+    text-decoration: none;
+}
+
 html {
     scroll-behavior: smooth;
+}
+
+.hr-small {
+    width: 25%;
+    border-bottom: 1px solid lightgray;
+}
+
+/* divisori  */
+.divider-50 {
+    margin-bottom:50px;
+}
+.divider-30 {
+    margin-bottom: 30px;
+}
+.divider-20 {
+    margin-bottom: 20px;
+}
+.divider-10 {
+    margin-bottom: 10px;
+}
+.section-divider {
+    margin-bottom: 100px;
 }
 
 /* Flex  */
@@ -107,6 +129,10 @@ html {
     align-items: baseline;
     align-content: baseline;
 }
+.align-stretch {
+    align-items: stretch;
+    align-content: stretch;
+}
 .wrap {
     flex-flow: row wrap;
 }
@@ -115,6 +141,9 @@ html {
 }
 .column-gap {
     column-gap: 35px;
+}
+.column-gap-small {
+    column-gap: 10px;
 }
 
 /* header */
@@ -213,7 +242,42 @@ main h3 {
     font-size: 1.5em;
 }
 
-/* dropbox partner section  */
+/* billing section  */
+.billing-plan {
+    width: 30%;
+    border: 1px solid lightgray;
+}
+.billing-plan-header {
+    text-align: center;
+    border-bottom: 1px solid lightgrey;
+    padding: 10px 0;
+}
+.billing-plan-body {
+    padding: 30px 20px;
+}
+
+.sub-price {
+    font-weight: lighter;
+}
+
+.billing-plan-body .blue-button {
+    text-align: center;
+}
+.billing-plan-body .simple-anchor {
+    display: inline-block;
+}
+.billing-plan-details i {
+    color: var(--color-button);
+}
+.billing-plan-big-box {
+    border: 1px solid lightgray;
+}
+.billing-plan-big-box a{
+    width: 35%;
+}
+
+
+/*partner section  */
 .dropbox-partner img {
     width: 60%;
 }
@@ -243,16 +307,6 @@ main h3 {
 .card img {
     width: 100%;
 }
-
-.dropbox-business a{
-    color: var(--color-button);
-    text-decoration: underline;
-}
-.dropbox-business a:hover{
-    color: var(--color-box-6);
-    text-decoration: none;
-}
-
 
 .dropbox-business .second-h2 {
     padding-top: 200px;
@@ -313,10 +367,7 @@ main h3 {
 #big-brand-wrapper img {
     width: 50%;
 }
-.hr-small {
-    width: 25%;
-    border-bottom: 1px solid lightgray;
-}
+
 
 /* call to action  */
 .call-to-action {
