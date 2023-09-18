@@ -25,6 +25,7 @@ body {
     --color-box-7: #0d2481;
     --color-box-8: #ffd830;
 	--color-box-large: #f5f5f5;
+    --color-call-to-action-title: #61082b;
 }
 
 .container{
@@ -37,8 +38,16 @@ body {
     border: 1px solid var(--color-bg-footer);
 } */
 
-.divider-big {
-    margin-bottom:40px;
+.divider-30 {
+    margin-bottom: 30px;
+}
+
+.divider-50 {
+    margin-bottom:50px;
+}
+
+.section-divider {
+    margin-bottom: 100px;
 }
 
 ul {
@@ -54,6 +63,13 @@ a {
     background-color: var(--color-button);
     padding: 10px 20px;
     color: var(--color-bg-main);
+    border: 1px solid var(--color-button);
+}
+
+.blue-button:hover {
+    background-color: var(--color-bg-main);
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
 }
 
 html {
@@ -87,13 +103,17 @@ html {
     align-items: flex-start;
     align-content: flex-start;
 }
+.align-baseline {
+    align-items: baseline;
+    align-content: baseline;
+}
 .wrap {
     flex-flow: row wrap;
 }
 .row-gap {
-    row-gap: 20px;
+    row-gap: 50px;
 }
-.nav-column-gap {
+.column-gap {
     column-gap: 35px;
 }
 
@@ -103,19 +123,30 @@ html {
 nav {
     height: 80px;
     background-color: var(--color-bg-main);
-    border-bottom: 1px solid lightgray;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
     padding: 0 20px;
     z-index: 1000;
+    box-shadow: 0 1px 1px 1px rgba(0,0,0,0.1);
 }
 
+nav img {
+    margin-right: 20px;
+}
 
-nav a {
+nav li a {
     color: var(--color-text);
+    line-height: 80px;
+    padding: 0 20px;
 }
+
+nav li:hover {
+    background-color: var(--color-box-large);
+}
+
+
 
 /* hero  */
 #hero {
@@ -145,12 +176,16 @@ nav a {
 #hero a {
     display: block;
     width: fit-content;
+    color: var(--color-text);
 }
 
 #hero .arrow-down {
     font-size: 3em;
-    margin-top: 60px;
     color: var(--color-text);
+}
+
+#hero .arrow-down:hover {
+    font-size: 3.2em;
 }
 
 .hero-content {
@@ -162,9 +197,6 @@ nav a {
     width: 100%;
 }
 
-#hero p, #hero a {
-    margin-bottom: 20px;
-}
 
 /* main  */
 
@@ -172,16 +204,13 @@ nav a {
 main {
     padding-top: 150px;
 }
-.section-divider {
-    margin-bottom: 100px;
-}
+
 main h2 {
     font-size: 2.5em;
-    padding-bottom: 50px;
 }
+
 main h3 {
     font-size: 1.5em;
-    margin-bottom: 30px;
 }
 
 /* dropbox partner section  */
@@ -189,15 +218,7 @@ main h3 {
     width: 60%;
 }
 .dropbox-partner-text {
-    padding: 0 20px;
-}
-
-.dropbox-partner h3 {
-    padding-top: 50px;
-}
-
-.dropbox-partner p {
-    margin-bottom: 30px;
+    padding: 50px 20px;
 }
 
 .dropbox-partner a {
@@ -206,6 +227,12 @@ main h3 {
     padding: 10px 15px;
     display: block;
     width: fit-content;
+}
+
+.dropbox-partner a:hover {
+    background-color: var(--color-button);
+    border: 1px solid var(--color-button);
+    color: var(--color-bg-main);
 }
 
 /* dropbox business section  */
@@ -221,6 +248,12 @@ main h3 {
     color: var(--color-button);
     text-decoration: underline;
 }
+.dropbox-business a:hover{
+    color: var(--color-box-6);
+    text-decoration: none;
+}
+
+
 .dropbox-business .second-h2 {
     padding-top: 200px;
 }
@@ -281,8 +314,36 @@ main h3 {
     width: 50%;
 }
 .hr-small {
-    width: 20%;
+    width: 25%;
     border-bottom: 1px solid lightgray;
+}
+
+/* call to action  */
+.call-to-action {
+    background-color: var(--color-box-6);
+    height: calc(100vw / 6);
+}
+
+.call-to-action h2 {
+    color: var(--color-call-to-action-title);
+    padding: 0;
+}
+
+.call-to-action-text {
+    width: 50%;
+}
+.call-to-action-button a {
+    color: var(--color-text);
+    background-color: var(--color-bg-main);
+    padding: 10px 20px;
+    border: 1px solid var(--color-bg-main);
+
+}
+
+.call-to-action-button a:hover {
+    background-color: var(--color-button);
+    border: 1px solid var(--color-button);
+    color: var(--color-bg-main);
 }
 
 /* footer  */
