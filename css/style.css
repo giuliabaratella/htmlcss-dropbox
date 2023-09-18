@@ -81,6 +81,11 @@ html {
     border-bottom: 1px solid lightgray;
 }
 
+.hr-xsmall {
+    width:15%;
+    border-bottom: 1px solid lightgray;
+}
+
 /* divisori  */
 .divider-50 {
     margin-bottom:50px;
@@ -175,7 +180,9 @@ nav li:hover {
     background-color: var(--color-box-large);
 }
 
-
+nav .blue-button {
+    margin-left: 20px;
+}
 
 /* hero  */
 #hero {
@@ -304,6 +311,7 @@ main h3 {
 .card {
     width: 30%;
 }
+
 .card img {
     width: 100%;
 }
@@ -369,6 +377,7 @@ main h3 {
 }
 
 
+
 /* call to action  */
 .call-to-action {
     background-color: var(--color-box-6);
@@ -397,20 +406,60 @@ main h3 {
     color: var(--color-bg-main);
 }
 
+/* faq */
+.faq-question {
+    padding: 50px 0;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.faq-box .faq-question:first-child {
+    border-top: 1px solid var(--color-text);
+}
+
+.faq h3 {
+    font-size: 1.2em;
+}
+.faq-question p {
+    margin-top: 20px;
+}
+
+.faq-box p, .faq-box .fa-chevron-down {
+    display: none;
+}
+
+.faq-question:hover {
+    background-color: var(--color-box-large);
+}
+
+.faq-question:hover .fa-chevron-up {
+    display: none;
+}
+
+.faq-question:hover p, .faq-question:hover .fa-chevron-down {
+    display: block;
+}
+
+
 /* footer  */
 footer {
     background-color: var(--color-bg-footer);
     color: var(--color-bg-main);
+    padding: 50px 0;
 
 }
-.footer-sections {
-    padding: 60px 0;
-}
+
 .footer-sections h4 {
-    padding-bottom: 20px;
     font-size: 1.4em;
 }
 .footer-sections li {
     font-size: 1.2em;
     padding-bottom: 15px;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+
+.chose-language {
+    color: lightgray;
+
 }
