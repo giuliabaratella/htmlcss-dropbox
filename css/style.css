@@ -113,6 +113,9 @@ html {
 .just-space-between {
     justify-content: space-between;
 }
+.just-space-around {
+    justify-content: space-around;
+}
 .just-flex-start {
     justify-content: flex-start;
 }
@@ -502,4 +505,121 @@ footer a:hover {
     color: lightgray;
     cursor: pointer;
 
+}
+
+
+/* resources page */
+
+.res-container {
+    max-width:1400px;
+    margin: 0 auto;
+    padding: 0 5px;
+}
+
+/*resources hero */
+.res-hero-container {
+    margin-top: 80px;
+}
+.res-hero-half {
+    width: 50%;
+    text-align: center;
+    padding:70px;
+}
+
+#resources h1 {
+    font-size: 3em;
+    padding: 0;
+    color: var(--color-bg-main);
+}
+
+.res-hero-half.main-title{
+    background-color: var(--color-bg-footer);
+}
+
+.res-hero-half.main-p{
+    background-color: var(--color-bg-hero);
+}
+
+/* choose resources section  */
+
+.choose-resources {
+    background-color: var(--color-box-large);
+}
+
+.choose-resources h2 {
+    font-weight: 2.5em;
+}
+
+.browse-resources {
+    width:50%;
+    padding: 50px 0;
+}
+.browse-resources select {
+    text-decoration: none;
+}
+
+/* resources main  */
+#resources main {
+    padding-top: 30px;
+    background-color: var(--color-bg-main);
+}
+
+/* explore resources section  */
+
+.res-card-container {
+    background-color: var(--color-box-large);
+    padding: 50px;
+}
+
+.res-card {
+    width: 22%;
+}
+
+.res-card-picture img{
+    width:100%;
+    height:200px;
+    object-fit: cover;
+}
+.res-card a {
+    color: var(--color-text); 
+}
+.res-card a:hover {
+    text-decoration: underline;
+}
+.load-more a {
+    color: var(--color-text);
+    background-color: var(--color-box-large);
+    padding: 15px 20px;
+    border: 1px solid var(--color-text);
+}
+
+.load-more {
+    background-color: var(--color-box-large);
+    padding-bottom: 50px;
+}
+.load-more a:hover {
+    color: var(--color-bg-main);
+    background-color: var(--color-button);
+    padding: 15px 20px;
+    border: 1px solid var(--color-button);
+}
+
+/* Resources call to cation  */
+.res-call-to-action {
+    background-color: var(--color-bg-hero);
+    text-align: center;
+    padding: 50px;
+}
+
+.res-call-to-action a{
+    color: var(--color-text);
+}
+.res-call-to-action a:hover{
+    text-decoration: underline;
+}
+.res-call-to-action h2{
+    font-size: 3.5em;
+}
+.res-call-to-action h2:hover i{
+    font-size: 0.8em;
 }
